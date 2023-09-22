@@ -1,6 +1,4 @@
-.paperOutlineSVG {
-  position: absolute;
-}
-.paperNoOutlineSVG {
-  position: absolute;
+.container {
+  overflow: hidden;
+  background-color: rgba(217, 217, 217, 1);
 }
