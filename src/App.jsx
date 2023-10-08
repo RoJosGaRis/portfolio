@@ -1,36 +1,15 @@
-import { BrowserRouter } from "react-router-dom";
-import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-} from "./components";
+import { useState, useRef, useEffect } from "react";
+import styles from "./App.module.css";
+import anime from "animejs/lib/anime.es.js";
+
+import Airplane from "./components/Airplane/airplane";
+import Hero from "./components/Hero/Hero";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <About></About>
-        <Experience></Experience>
-        <Tech></Tech>
-        <Works></Works>
-        <Feedbacks></Feedbacks>
-
-        <div className="relative z-0">
-          <Contact></Contact>
-          <StarsCanvas></StarsCanvas>
-        </div>
-      </div>
-    </BrowserRouter>
+    <div className={styles.container}>
+      <Hero />
+    </div>
   );
 };
 
