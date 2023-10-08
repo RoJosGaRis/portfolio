@@ -1,8 +1,13 @@
 import React from "react";
 import styles from "./Hero.module.css";
+import ContainerCard from "../ContainerCard/ContainerCard";
 
 const Hero = () => {
-  return <div className={styles.hero_container}></div>;
+  return (
+    <ContainerCard className={styles.hero_container}>
+      <p>Hello world!</p>
+    </ContainerCard>
+  );
 };
 
 export default Hero;
